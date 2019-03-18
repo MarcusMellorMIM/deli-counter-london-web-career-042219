@@ -7,4 +7,4 @@ def take_a_number(katz_deli, name)
 end
 
 def line( katz_deli )
-  puts "The line is currenty: #{katz_deli.each_index|x| print x+1". "katz_deli[x]}
+  puts "The line is currenty: #{katz_deli.each_index|x| print x+1". "katz_deli[x]}}

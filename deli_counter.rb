@@ -9,13 +9,17 @@ end
 
 def line( katz_deli )
   counter=0
-  return_string="The line is currently: "
-  while counter < katz_deli.count
-    counter+=1
-    return_string+=counter.to_s
-    return_string+=". "
-    return_string+=katz_deli[counter-1]
-    return_string+=" "
+  if katz_deli.count>0
+    return_string="The line is currently: "
+    while counter < katz_deli.count
+      counter+=1
+      return_string+=counter.to_s
+      return_string+=". "
+      return_string+=katz_deli[counter-1]
+      return_string+=" "
+    end
+  else
+    return_string="The line is currently empty."
   end
   puts return_string
 end
